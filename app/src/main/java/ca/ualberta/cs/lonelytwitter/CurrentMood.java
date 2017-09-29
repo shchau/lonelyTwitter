@@ -1,9 +1,29 @@
+/*
+ * Class Name: CurrentMood
+ *
+ * Version: Version 1.0
+ *
+ * Date: September 28th, 2017
+ *
+ * Copyright (c) Team SSMAD CMPUT301 University of Alberta.
+ * All Rights Reserved. You may not use, distribute,
+ * or modify this code under terms and conditions of the Code of Students Behaviour of University of Alberta
+ */
+
+
 package ca.ualberta.cs.lonelytwitter;
 
 import java.util.Date;
+
 /**
- * Created by cryst on 9/14/2017.
+ * Represents current mood
+ * @author Simon Chau
+ * @version 1.0
+ * @see HappyMood
+ * @see SadMood
+ * @since 1.0
  */
+
 
 public abstract class CurrentMood {
     private Date date;

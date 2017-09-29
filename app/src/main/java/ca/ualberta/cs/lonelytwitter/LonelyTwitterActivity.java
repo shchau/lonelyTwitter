@@ -1,3 +1,15 @@
+/*
+ * Class Name: LonelyTwitterActivity
+ *
+ * Version: Version 1.0
+ *
+ * Date: September 28th, 2017
+ *
+ * Copyright (c) Team SSMAD CMPUT301 University of Alberta.
+ * All Rights Reserved. You may not use, distribute,
+ * or modify this code under terms and conditions of the Code of Students Behaviour of University of Alberta
+ */
+
 package ca.ualberta.cs.lonelytwitter;
 
 import java.io.BufferedReader;
@@ -24,6 +36,14 @@ import android.widget.ListView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+/**
+ * Represents an Activity
+ * @author Simon Chau
+ * @version 1.0
+ * @see Tweet
+ * @since 1.0
+ */
+
 public class LonelyTwitterActivity extends Activity {
 
 	private static final String FILENAME = "file.sav";
@@ -33,7 +53,13 @@ public class LonelyTwitterActivity extends Activity {
 	private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
 	private ArrayAdapter<Tweet> adapter;
 
-	/** Called when the activity is first created. */
+	/**
+	 * Called when activity starts
+	 * Connects buttons to actions
+	 * @param savedInstanceState
+	 *
+	 */
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -68,6 +94,15 @@ public class LonelyTwitterActivity extends Activity {
 		});
 	}
 
+	/**
+	 * Loads old tweets
+	 * Initializes adapter with a Tweets array
+	 * @see Tweet
+	 * @see ArrayAdapter
+	 *
+	 */
+
+
 	@Override
 	protected void onStart() {
 		// TODO Auto-generated method stub
@@ -77,6 +112,14 @@ public class LonelyTwitterActivity extends Activity {
 				R.layout.list_item, tweets);
 		oldTweetsList.setAdapter(adapter);
 	}
+
+
+	/**
+	 * Loads old tweets from file
+	 * @see Gson
+	 * @throws FileNotFoundException
+	 */
+
 
 	private void loadFromFile() {
 		try {
@@ -96,7 +139,15 @@ public class LonelyTwitterActivity extends Activity {
 			throw new RuntimeException();
 		}
 	}
-	
+
+	/**
+	 * Saves current tweets to file
+	 * @see Gson
+	 * @throws FileNotFoundException
+	 * @throws IOException
+	 */
+
+
 	private void saveInFile() {
 		try {
 			FileOutputStream fos = openFileOutput(FILENAME,
