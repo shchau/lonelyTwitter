@@ -3,30 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\cryst\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.2\3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf\gson-2.8.2.jar"
+        jar="C:\Users\cryst\.gradle\caches\modules-2\files-2.1\com.jayway.android.robotium\robotium-solo\5.6.3\94ec2d7b23be9817d92905cc09124aecfc46d28c\robotium-solo-5.6.3.jar"
         jumboMode="false"
         optimize="true"
-        revision="26.0.1"
-        sha1="3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf">
-        <dex dex="C:\Users\cryst\AndroidStudioProjects\lonelyTwitter\app\build\intermediates\pre-dexed\debug\gson-2.8.2_d8047dad75929a4795c49402c7dd34cddec05676.jar" />
+        revision="25.0.0"
+        sha1="94ec2d7b23be9817d92905cc09124aecfc46d28c">
+        <dex dex="C:\Users\cryst\AndroidStudioProjects\lonelyTwitter\app\build\intermediates\pre-dexed\debug\robotium-solo-5.6.3_cd810c15411a623b4e90536341f22798fee9b521.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\cryst\AndroidStudioProjects\lonelyTwitter\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\cryst\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="false"
         optimize="true"
-        revision="26.0.1"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\cryst\AndroidStudioProjects\lonelyTwitter\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ebbdb83e7b45f2565364f357b1b3863db45d3b61\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cryst\AndroidStudioProjects\lonelyTwitter\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="b823022f5ff190e0b85014680bd9b47f84aafa28">
-        <dex dex="C:\Users\cryst\AndroidStudioProjects\lonelyTwitter\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_aa9964d9de991cc7d19d1cee9398894e913dd7e3\classes.dex" />
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\cryst\AndroidStudioProjects\lonelyTwitter\app\build\intermediates\pre-dexed\debug\gson-2.7_22121bc19a8c2ad00aa24576b0c099c0f4c13040.jar" />
     </item>
 
 </items>

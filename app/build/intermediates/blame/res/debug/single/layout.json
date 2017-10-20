@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\lonelyTwitter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\Users\\cryst\\AndroidStudioProjects\\lonelyTwitter\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\lonelyTwitter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_edit_tweet.xml",
+        "source": "C:\\Users\\cryst\\AndroidStudioProjects\\lonelyTwitter\\app\\src\\main\\res\\layout\\activity_edit_tweet.xml"
+    },
+    {
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\lonelyTwitter\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\cryst\\AndroidStudioProjects\\lonelyTwitter\\app\\src\\main\\res\\layout\\main.xml"
+    }
+]
