@@ -1,8 +1,7 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 18
-    buildToolsVersion "22.0.1"
-
+    compileSdkVersion 25
+    buildToolsVersion '26.0.1'
     defaultConfig {
         applicationId "ca.ualberta.cs.lonelytwitter"
         minSdkVersion 18
@@ -12,17 +11,19 @@ android {
             targetCompatibility JavaVersion.VERSION_1_5
         }
     }
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
+    compile files('src/include/jest-droid-2.0.1-SNAPSHOT.jar')
     compile 'com.jayway.android.robotium:robotium-solo:5.6.3'
     compile 'com.android.support:appcompat-v7:18.0.0'
-    compile files('src/include/jest-droid-2.0.1-SNAPSHOT.jar')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }

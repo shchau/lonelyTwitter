@@ -9,15 +9,11 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Date;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -107,38 +103,42 @@ public class LonelyTwitterActivity extends Activity {
 	}
 
 
-	private void loadFromFile() {
-		try {
-			FileInputStream fis = openFileInput(FILENAME);
-			BufferedReader in = new BufferedReader(new InputStreamReader(fis));
-			Gson gson = new Gson();
-			//Code taken from http://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt Sept.22,2016
-			Type listType = new TypeToken<ArrayList<NormalTweet>>(){}.getType();
-			tweetList = gson.fromJson(in, listType);
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			tweetList = new ArrayList<NormalTweet>();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			throw new RuntimeException();
-		}
-	}
+// --Commented out by Inspection START (11/2/2017 6:30 PM):
+//	private void loadFromFile() {
+//		try {
+//			FileInputStream fis = openFileInput(FILENAME);
+//			BufferedReader in = new BufferedReader(new InputStreamReader(fis));
+//			Gson gson = new Gson();
+//			//Code taken from http://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt Sept.22,2016
+//			Type listType = new TypeToken<ArrayList<NormalTweet>>(){}.getType();
+//			tweetList = gson.fromJson(in, listType);
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			tweetList = new ArrayList<NormalTweet>();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			throw new RuntimeException();
+//		}
+//	}
+// --Commented out by Inspection STOP (11/2/2017 6:30 PM)
 
 
-	private void saveInFile() {
-		try {
-
-			FileOutputStream fos = openFileOutput(FILENAME,0);
-			OutputStreamWriter writer = new OutputStreamWriter(fos);
-			Gson gson = new Gson();
-			gson.toJson(tweetList, writer);
-			writer.flush();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			throw new RuntimeException();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			throw new RuntimeException();
-		}
-	}
+// --Commented out by Inspection START (11/2/2017 6:31 PM):
+//	private void saveInFile() {
+//		try {
+//
+//			FileOutputStream fos = openFileOutput(FILENAME,0);
+//			OutputStreamWriter writer = new OutputStreamWriter(fos);
+//			Gson gson = new Gson();
+//			gson.toJson(tweetList, writer);
+//			writer.flush();
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			throw new RuntimeException();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			throw new RuntimeException();
+//		}
+//	}
+// --Commented out by Inspection STOP (11/2/2017 6:31 PM)
 }

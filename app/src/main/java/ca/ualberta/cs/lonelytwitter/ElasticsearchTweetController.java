@@ -10,7 +10,6 @@ import com.searchly.jestdroid.JestDroidClient;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.searchbox.annotations.JestId;
 import io.searchbox.core.DocumentResult;
 import io.searchbox.core.Index;
 import io.searchbox.core.Search;

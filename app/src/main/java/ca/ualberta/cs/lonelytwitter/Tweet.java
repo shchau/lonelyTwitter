@@ -14,9 +14,11 @@ public abstract class Tweet implements Tweetable {
         this.id = id;
     }
 
-    public String getId() {
-        return id;
-    }
+// --Commented out by Inspection START (11/2/2017 6:31 PM):
+//    public String getId() {
+//        return id;
+//    }
+// --Commented out by Inspection STOP (11/2/2017 6:31 PM)
 
     public Tweet(String message){
         this.message = message;
@@ -33,20 +35,24 @@ public abstract class Tweet implements Tweetable {
         return message;
     }
 
-    public abstract Boolean isImportant();
+    // --Commented out by Inspection (11/2/2017 6:31 PM):public abstract Boolean isImportant();
 
 
-    public void setMessage(String message) throws TweetTooLongException {
-        if (message.length() > 140){
-            //Do Something!
-            throw new TweetTooLongException();
-        }
-        this.message = message;
-    }
+// --Commented out by Inspection START (11/2/2017 6:31 PM):
+//    public void setMessage(String message) throws TweetTooLongException {
+//        if (message.length() > 140){
+//            //Do Something!
+//            throw new TweetTooLongException();
+//        }
+//        this.message = message;
+//    }
+// --Commented out by Inspection STOP (11/2/2017 6:31 PM)
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
+// --Commented out by Inspection START (11/2/2017 6:31 PM):
+//    public void setDate(Date date) {
+//        this.date = date;
+//    }
+// --Commented out by Inspection STOP (11/2/2017 6:31 PM)
 
     public String getMessage() {
         return message;

@@ -2,7 +2,6 @@ package ca.ualberta.cs.lonelytwitter;
 
 import android.test.ActivityInstrumentationTestCase2;
 
-import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 /**
